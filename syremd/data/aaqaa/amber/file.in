@@ -1,0 +1,30 @@
+
+# Load parameters
+#loadAmberParams p-xylene-explicit-output/setup/molecules/p-xylene/p-xylene.frcmod
+
+
+source leaprc.protein.ff14SB
+source leaprc.gaff2
+source leaprc.water.tip4pew
+aaqaa = loadpdb all3.pdb
+
+# Load molecules
+#p-xylene = loadMol2 p-xylene-explicit-output/setup/molecules/p-xylene/p-xylene.gaff.mol2
+
+# Solvate systems
+#solvateBox aaqaa TIP4PEWBOX 15.0
+#addIons aaqaa Cl+ 3
+#addIonsRand p-xylene Cl- 0.15
+
+# Check charge
+check aaqaa
+
+# Save prmtop and inpcrd files
+
+set system box {45 45 45}
+saveAmberParm aaqaa aaqaa.prmtop aaqaa.inpcrd
+savePDB aaqaa aaqaa.pdb
+
+quit
+~                                                                                                                                                                                                                   
+~                              

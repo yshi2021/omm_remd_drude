@@ -1,0 +1,12 @@
+-np 1 -env CUDA_VISIBLE_DEVICES 0 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 1 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 2 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 3 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 0 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 1 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 2 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 3 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 0 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 1 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 2 ./run_remd.py :
+-np 1 -env CUDA_VISIBLE_DEVICES 3 ./run_remd.py 

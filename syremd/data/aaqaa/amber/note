@@ -1,0 +1,6 @@
+ATOM     23  O   WAT     3      18.328  12.607  10.994  1.00  0.00
+ATOM     24  H1  WAT     3      18.062  12.144  11.790  1.00  0.00
+ATOM     25  H2
+sed -i s/OH2/O /g all3.pdb 
+sed -i 's/ CLA CLA/CL-  CL-/' all3.pdb
+sed -i 's/ SOD SOD/NA+  NA+/' all3.pdb

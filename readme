@@ -1,0 +1,16 @@
+#
+This is a simple scripts for REMD simulations using OpenMM
+
+syremd: the major scripts.
+aaqaa: testing systems
+gpujobs3.sh: the slurm example
+test5.configfile, and test5.hostfile is to set computational resource manually, for automatic way, please see https://github.com/choderalab/clusterutils
+run_remd.py: the scripts to run remd, including setting input and output files 
+
+hand_log{rank id}.log: store the information about replica temperature, the results is append to the file, using bash scripts can extract the info.
+run_replica_{replica id}_{segments}.dcd: the output dcd and output files
+
+
+
+
+
